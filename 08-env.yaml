@@ -7,10 +7,10 @@ spec:
   containers:
     - name: nginx
       image: nginx:latest
-  environment:
-    - name: ENV
-      value: dev
-    - name: project
-      value: roboshop
-    - name: platform
-      value: kubernetes
+      env:
+        - name: ENV
+          value: dev
+        - name: project
+          value: roboshop
+        - name: platform
+          value: kubernetes
